@@ -44,17 +44,17 @@ section {
     @wideUrlmd: %("../images/%s-md.jpg", @id);
     @wideUrllg: %("../images/%s-lg.jpg", @id);
     background-color: black;
-    background-image: url("@wideUrlxs");
+    background-image: url(@wideUrlxs);
     background-repeat: no-repeat;
     background-position: center center;
     @media (min-width: @screen-sm-min) {
-        background-image: url("@wideUrlsm");
+        background-image: url(@wideUrlsm);
     }
     @media (min-width: @screen-md-min) {
-        background-image: url("@wideUrlmd");
+        background-image: url(@wideUrlmd);
     }
     @media (min-width: @screen-lg-min) {
-        background-image: url("@wideUrllg");
+        background-image: url(@wideUrllg);
     }
 }
 #home {
