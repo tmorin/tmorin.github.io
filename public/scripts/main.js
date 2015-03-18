@@ -1,31 +1,29 @@
-$(document).ready(function() {
+$(document).ready(function () {
     'use strict';
     $('#pagepiling').pagepiling({
         anchors: [
             'page-home',
             'page-custom-element-builder',
-            'page-cqrsjs',
             'page-ffos-ownnews',
+            'page-omvedahome',
+            'page-cqrsjs',
             'page-memos',
             'page-shopList',
             'page-quanban',
-            'page-hoozbuzzing',
-            'page-omvedahome'
+            'page-hoozbuzzing'
         ],
         navigation: {
-            'textColor': '#000',
-            'bulletsColor': '#000',
             'position': 'right',
             'tooltips': [
                 'Home',
                 'custom-element-builder',
-                'cqrsjs',
                 'OwnNews',
+                'omvedahome.com',
+                'cqrsjs',
                 'Memos',
                 'ShopList',
                 'Quanban',
-                'hoozbuzzing.com',
-                'omvedahome.com'
+                'hoozbuzzing.com'
             ],
         },
         sectionSelector: 'section'

@@ -5,87 +5,82 @@
 .pp-tooltip {
     background-color: #000;
     top: -5px;
-    color: #FFF;
+    color: #fff;
     padding: 0.5rem;
     border-radius: 0.5rem;
 }
-
-section {
-    article {
-        padding: 1rem;
-        margin: 1rem;
-        background-color: white;
+#pp-nav {
+    a {
+        color: rgba(255,255,255,0.9);
+        span {
+            border: none;
+        }
+        background-color: rgba(255,255,255,0.5);
         border-radius: 1rem;
+        border: 1px solid rgba(0,0,0,0.5);
     }
-
-    .label {
-        padding: 0.3rem 0.5rem;
-    }
-
+}
+section {
+    article,
     aside {
         padding: 1rem;
         margin: 1rem;
-        background-color: white;
+        background-color: rgba(255,255,255,0.9);
         border-radius: 1rem;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+    .label {
+        padding: 0.3rem 0.5rem;
+    }
+    aside {
         ul {
             margin: 0;
         }
     }
 }
-
-.section-bg(@name) {
+.section-bg(@id: string) {
+    @wideUrlxs: %("../images/%s-xs.jpg", @id);
+    @wideUrlsm: %("../images/%s-sm.jpg", @id);
+    @wideUrlmd: %("../images/%s-md.jpg", @id);
+    @wideUrllg: %("../images/%s-lg.jpg", @id);
+    background-color: black;
+    background-image: url("@wideUrlxs");
+    background-repeat: no-repeat;
+    background-position: center center;
     @media (min-width: @screen-sm-min) {
+        background-image: url("@wideUrlsm");
     }
-
     @media (min-width: @screen-md-min) {
+        background-image: url("@wideUrlmd");
     }
-
     @media (min-width: @screen-lg-min) {
+        background-image: url("@wideUrllg");
     }
 }
-
 #home {
-    background-color: lightgray;
     .section-bg('home');
 }
-
 #custom-element-builder {
-    background-color: #ADD8E6;
-    .section-bg('custom-element-builder');
+    .section-bg('ceb');
 }
-
 #cqrsjs {
-    background-color: #B2DFEE;
     .section-bg('cqrs');
 }
-
 #ffos-ownnews {
-    background-color: #BFEFFF;
-    .section-bg('ffos-ownnews');
+    .section-bg('ownnews');
 }
-
 #memos {
-    background-color: #A4D3EE;
     .section-bg('memos');
 }
-
 #shopList {
-    background-color: #F0F8FF;
-    .section-bg('shopList');
+    .section-bg('shoplist');
 }
-
 #quanban {
-    background-color: #C6E2FF;
     .section-bg('quanban');
 }
-
 #hoozbuzzing {
-    background-color: #E6E8FA;
     .section-bg('hoozbuzzing');
 }
-
 #omvedahome {
-    background-color: #F8F8FF;
     .section-bg('omvedahome');
 }
-
