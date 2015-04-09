@@ -37,6 +37,19 @@ section {
             margin: 0;
         }
     }
+    &.dark {
+        article, aside {
+//            color: white;
+            background-color: rgba(230,230,230,0.9);
+        }
+        h1 small {
+//            color: rgba(220,220,220,1);
+        }
+        .label-invert {
+//            background-color: rgba(255,255,255,0.9);
+//            color: black;
+        }
+    }
 }
 .section-bg(@id: string) {
     @wideUrlxs: %("../images/%s-xs.jpg", @id);
