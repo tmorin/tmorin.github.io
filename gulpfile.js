@@ -49,7 +49,7 @@ gulp.task('prepare', function (cb) {
     runSequence(
         'clean:tmp', ['prepare-styles', 'prepare-fonts', 'prepare-scripts'],
         cb
-    )
+    );
 });
 
 /* COPY */
