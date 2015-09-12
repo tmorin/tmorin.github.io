@@ -1,4 +1,4 @@
-node_modules
-tmp
-dist
-.publish
+/.idea
+/.publish
+/dist
+/node_modules
