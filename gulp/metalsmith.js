@@ -32,7 +32,9 @@ gulp.task('metalsmith', [], function () {
             delete file.frontMatter;
         })
         .pipe(gulpsmith()
-            .metadata({})
+            .metadata({
+                datas: require('../src/data')
+            })
             .use(paths())
             .use(markdown())
             .use(layouts({
