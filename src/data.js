@@ -1,11 +1,11 @@
 exports.projects = [{
-    name: 'custom-elements-builder',
+    name: 'ceb',
     year: '2015',
     description: [
-        'ceb is a JavaScript library helping to develop Custom Elements from a builder style API.'
+        'custom-element-builder is just a set of builders, natively scalable and designed for FRP.'
     ].join(' '),
-    github: 'https://github.com/tmorin/custom-elements-builder',
-    homepage: 'https://tmorin.github.io/custom-elements-builder',
+    github: 'https://github.com/tmorin/ceb',
+    homepage: 'https://tmorin.github.io/ceb',
     keywords: [
         'JavaScript',
         'es6',
