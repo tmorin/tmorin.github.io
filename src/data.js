@@ -2,7 +2,7 @@ exports.projects = [{
     name: 'ceb',
     year: '2015',
     description: [
-        'custom-element-builder is just a set of builders, natively scalable and designed for FRP.'
+        '<code>&lt;ceb/&gt;</code> is a javascript library helping to develop Custom Elements.'
     ].join(' '),
     github: 'https://github.com/tmorin/ceb',
     homepage: 'https://tmorin.github.io/ceb',
@@ -33,7 +33,7 @@ exports.projects = [{
         'bootstrap',
         'metalsmith'
     ]
-}, {
+}/*, {
     name: 'cqrsjs',
     year: '2014',
     description: [
@@ -111,4 +111,4 @@ exports.projects = [{
         'JavaScript',
         'JQuery UI'
     ]
-}];
+}*/];
