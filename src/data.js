@@ -5,7 +5,7 @@ exports.projects = [{
         '<code>&lt;ceb/&gt;</code> is a javascript library helping to develop Custom Elements.'
     ].join(' '),
     github: 'https://github.com/tmorin/ceb',
-    homepage: 'https://tmorin.github.io/ceb',
+    homepage: 'http://tmorin.github.io/ceb',
     keywords: [
         'JavaScript',
         'es6',
