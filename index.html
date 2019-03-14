@@ -69,34 +69,35 @@
     </ul>
 </header>
 
-<section class="jumbotron jumbotron-fluid">
+<section class="jumbotron jumbotron-fluid mb-3">
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                 <h4>
                     <i class="fas fa-user"></i>
-                    front end
+                    Front end
                 </h4>
                 <p>
-                    Always keeping the focus on achieving quality web applications
-                    and being comfortable with the JavaScript/Typescript ecosystem,
-                    I help the team from the shell to the browser.
+                    Always keeping the focus to achieve web applications of quality
+                    and being comfortable with the web ecosystem,
+                    I help the team to materialize highly usable ideas.
                 </p>
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                 <h4>
                     <i class="fas fa-cogs"></i>
-                    back end
+                    Back end
                 </h4>
                 <p>
-                    Having always worked with Java from the beginning and now also with JavaScript/Typescript,
-                    I help the team to build resilient, secured and scalable containerized applications.
+                    Having strong experiences with Java and also with JavaScript/Typescript
+                    on different kind of software, I help the team to build resilient,
+                    secured and scalable containerized applications.
                 </p>
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                 <h4>
                     <i class="fas fa-hands-helping"></i>
-                    agile
+                    Agile
                 </h4>
                 <p>
                     Certified
@@ -114,11 +115,84 @@
                        target="_blank"
                        title="Professional Scrum Developer">
                         PSM
-                    </a> and acting as a servant​­leader for the team and the organization,
+                    </a> and acting as a servant-leader for the team and the organization,
                     I help to change interactions to maximize the value created.
                 </p>
             </div>
         </div>
+    </div>
+</section>
+
+<section class="container">
+    <h2>Personal projects</h2>
+    <p>
+        Various personal projects are available on GitHub or GitLab.
+        Please find below a selection of them:
+    </p>
+    <h4>Chainizer</h4>
+    <p class="text-justify">
+        The project chainizer is <em>"an alternative payment platform based on bitcoin, bitcoin cash, ethereum and litecoin"</em>.
+        The source code of the platform is available on GitLab: <a href="https://gitlab.com/chainizer" target="_blank">gitlab.com/chainizer</a>.
+        Initially written in Java using Axon Framework, the whole platform has been re-written in TypeScript.
+        The platform is composed of micro services bound together with AMQP queues.
+        Each micro service is packaged in a docker image which is then shipped to a Kubernetes cluster.
+        The project has been live for a while, but due to the cost of Google Kubernetes Engine, the hosting has been stopped.
+    </p>
+    <h4>Home Cloud</h4>
+    <p class="text-justify">
+        The goal of the project is to create a <em>home cloud</em> based on Pine64 boards (like RaspberryPie boards).
+        Initially, the <em>home cloud</em> was based on Kubernetes.
+        However due to limitation of the resources, I switched to a Docker Swarm.
+        The main features of the solution are: load balancing between nodes, a distributed filesystem, monitoring&alerts, reverse proxy and docker management.
+        The project is based on some repo available on GitLab:
+    </p>
+    <ul>
+        <li>
+            <a href="https://gitlab.com/tmorin/pine64-docker-swarm" target="_blank">
+                gitlab.com/tmorin/pine64-docker-swarm
+            </a>
+            : A set of Ansible playbooks to setup a Docker Swarm cluster based on PINE A64-LTS boards.
+        </li>
+        <li>
+            <a href="https://gitlab.com/tmorin/pine64-image-armbian" target="_blank">
+                gitlab.com/tmorin/pine64-image-armbian
+            </a>
+            : Script to build an Armbian image for PINE A64-LTS boards.
+        </li>
+        <li>
+            <a href="https://gitlab.com/tmorin/pine64-docker-images" target="_blank">
+                gitlab.com/tmorin/pine64-docker-images
+            </a>
+            : A set of docker images built for pine64 board.
+        </li>
+        <li>
+            <a href="https://gitlab.com/tmorin/pine64-k8s" target="_blank">
+                gitlab.com/tmorin/pine64-k8s
+            </a>
+            pine64-k8s: The initial attempt to install Kubernetes on PINE A64-LTS boards.
+        </li>
+    </ul>
+    <h4>Clear my private data now!</h4>
+    <p class="text-justify">
+        It is a web extension available on Firefox.
+        The goal of the project is to clear private date related to the current tab.
+        The homepage is <a href="https://addons.mozilla.org/en-US/firefox/addon/clear-private-data-now/" target="_blank">addons.mozilla.org/en-US/firefox/addon/clear-private-data-now</a>.
+    </p>
+    <h4>Idomizer</h4>
+    <p class="text-justify">
+        It is an HTML template parser compiling an Incremental DOM render factory.
+        Incremental DOM is a Google library for expressing and applying updates to DOM trees.
+        Incremental DOM is not <em>targeting direct usage</em> and idomizer tries to be a pleasant solution for that.
+        The project is written in TypeScript and publish on NPM.
+        The source code is available on GitHub: <a href="https://github.com/tmorin/idomizer" target="_blank">github.com/tmorin/idomizer</a>.
+    </p>
+</section>
+
+<!--<section class="jumbotron jumbotron-fluid mb-0 logos">
+    <div class="container">
+        <img src="logos/logo.psmI.png" alt="Professional Scrum Master I"/>
+        <img src="logos/logo.pspoI.png" alt="Professional Scrum Product Owner I"/>
+        <img src="logos/logo.psd.png" alt="Professional Scrum Developer"/>
     </div>
 </section>
 
@@ -134,11 +208,8 @@
         <img src="logos/logo.docker.png" alt="Docker"/>
         <img src="logos/logo.k8s.png" alt="Kubernetes"/>
         <img src="logos/logo.ddd.png" alt="Domain Driven Design"/>
-        <img src="logos/logo.psmI.png" alt="Professional Scrum Master I"/>
-        <img src="logos/logo.pspoI.png" alt="Professional Scrum Product Owner I"/>
-        <img src="logos/logo.psd.png" alt="Professional Scrum Developer"/>
     </div>
-</section>
+</section>-->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
