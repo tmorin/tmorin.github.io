@@ -138,15 +138,21 @@
         <span class="badge badge-secondary">Mongo</span>
         <span class="badge badge-secondary">AMQP</span>
     </p>
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <i class="fab fa-gitlab fa-fw "></i>
+            <a target="_blank" href="https://gitlab.com/chainizer">source on gitlab</a>
+        </li>
+    </ul>
     <p class="text-justify">
         The project chainizer is <em>"an alternative payment platform based on bitcoin, bitcoin cash, ethereum and litecoin"</em>.
-        The source code of the platform is available on GitLab: <a href="https://gitlab.com/chainizer" target="_blank">gitlab.com/chainizer</a>.
         Initially written in Java using Axon Framework, the whole platform has been re-written in TypeScript.
         The platform is composed of micro services bound together with AMQP queues.
         Each micro service is packaged in a docker image which is then shipped to a Kubernetes cluster.
         The project has been live for a while, but due to the cost of Google Kubernetes Engine, the hosting has been stopped.
     </p>
-    <h4>Abzu</h4>
+
+    <h4 class="mt-5">Abzu</h4>
     <p>
         <span class="badge badge-secondary">Java 11</span>
         <span class="badge badge-secondary">Gradle</span>
@@ -154,12 +160,18 @@
         <span class="badge badge-secondary">Junit</span>
         <span class="badge badge-secondary">Mockito</span>
     </p>
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <i class="fab fa-gitlab fa-fw "></i>
+            <a target="_blank" href="https://gitlab.com/tmorin/abzu">source on gitlab</a>
+        </li>
+    </ul>
     <p class="text-justify">
         It is a set of libraries designed to be as light weight as possible.
         The libraries are designed to be used in microservices that means: quick bootstrap + low footprint.
-        The source and packages are available on GitLab: <a href="https://gitlab.com/tmorin/abzu" target="_blank">gitlab.com/tmorin/abzu</a>.
     </p>
-    <h4>Smartgram</h4>
+
+    <h4 class="mt-5">Smartgram</h4>
     <p>
         <span class="badge badge-secondary">Typescript</span>
         <span class="badge badge-secondary">Babel</span>
@@ -171,14 +183,23 @@
         <span class="badge badge-secondary">WebRTC</span>
         <span class="badge badge-secondary">Socket.io</span>
     </p>
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <i class="fa fa-home fa-fw "></i>
+            <a target="_blank" href="https://tmorin.gitlab.io/smartgram/">home page</a>
+        </li>
+        <li class="list-inline-item">
+            <i class="fab fa-gitlab fa-fw "></i>
+            <a target="_blank" href="https://gitlab.com/tmorin/smartgram/">source on gitlab</a>
+        </li>
+    </ul>
     <p class="text-justify">
-        It is an HTML template parser compiling an Incremental DOM render factory.
-        Incremental DOM is a Google library for expressing and applying updates to DOM trees.
-        Incremental DOM is not <em>targeting direct usage</em> and idomizer tries to be a pleasant solution for that.
-        The project is written in TypeScript and publish on NPM.
-        The source code is available on GitHub: <a href="https://github.com/tmorin/idomizer" target="_blank">github.com/tmorin/idomizer</a>.
+        An online tool to design and print reflexive prisms
+        (<a target="_blank" href="https://www.instructables.com/id/Amazing-3D-Projection-Pyramid-in-10-min-from-Clear/">Amazing 3D Projection Pyramid in 10 min from Clear</a>).
+        There is also a video editor and a peer to peer player.
     </p>
-    <h4>Home Cloud</h4>
+
+    <h4 class="mt-5">Home Cloud</h4>
     <p>
         <span class="badge badge-secondary">Docker Swarm</span>
         <span class="badge badge-secondary">Ansible</span>
@@ -193,45 +214,56 @@
         Initially, the <em>home cloud</em> was based on Kubernetes.
         However due to limitation of the resources, I switched to a Docker Swarm.
         The main features of the solution are: load balancing between nodes, a distributed filesystem, monitoring&alerts, reverse proxy and docker management.
-        The project is based on some repo available on GitLab:
     </p>
+    <p>The project is based on some repo available on GitLab:</p>
     <ul>
         <li>
             <a href="https://gitlab.com/tmorin/pine64-docker-swarm" target="_blank">
-                gitlab.com/tmorin/pine64-docker-swarm
+                pine64-docker-swarm
             </a>
             : A set of Ansible playbooks to setup a Docker Swarm cluster based on PINE A64-LTS boards.
         </li>
         <li>
             <a href="https://gitlab.com/tmorin/pine64-image-armbian" target="_blank">
-                gitlab.com/tmorin/pine64-image-armbian
+                pine64-image-armbian
             </a>
             : Script to build an Armbian image for PINE A64-LTS boards.
         </li>
         <li>
             <a href="https://gitlab.com/tmorin/pine64-docker-images" target="_blank">
-                gitlab.com/tmorin/pine64-docker-images
+                pine64-docker-images
             </a>
             : A set of docker images built for pine64 board.
         </li>
         <li>
             <a href="https://gitlab.com/tmorin/pine64-k8s" target="_blank">
-                gitlab.com/tmorin/pine64-k8s
+                pine64-k8s
             </a>
             pine64-k8s: The initial attempt to install Kubernetes on PINE A64-LTS boards.
         </li>
     </ul>
-    <h4>Clear my private data now!</h4>
+
+    <h4 class="mt-5">Clear my private data now!</h4>
     <p>
         <span class="badge badge-secondary">Web extension</span>
         <span class="badge badge-secondary">JavaScript ES6</span>
     </p>
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <i class="fab fa-github fa-fw "></i>
+            <a target="_blank" href="https://github.com/tmorin/ff-cpdn">source on github</a>
+        </li>
+        <li class="list-inline-item">
+            <i class="fa fa-home fa-fw "></i>
+            <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/clear-private-data-now/">home page</a>
+        </li>
+    </ul>
     <p class="text-justify">
         It is a web extension available on Firefox.
         The goal of the project is to clear private date related to the current tab.
-        The homepage is <a href="https://addons.mozilla.org/en-US/firefox/addon/clear-private-data-now/" target="_blank">addons.mozilla.org/en-US/firefox/addon/clear-private-data-now</a>.
     </p>
-    <h4>Idomizer</h4>
+
+    <h4 class="mt-5">Idomizer</h4>
     <p>
         <span class="badge badge-secondary">Typescript</span>
         <span class="badge badge-secondary">Webpack</span>
@@ -240,12 +272,17 @@
         <span class="badge badge-secondary">Chai</span>
         <span class="badge badge-secondary">Karma</span>
     </p>
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <i class="fab fa-github fa-fw "></i>
+            <a target="_blank" href="https://github.com/tmorin/idomizer">source on github</a>
+        </li>
+    </ul>
     <p class="text-justify">
         It is an HTML template parser compiling an Incremental DOM render factory.
         Incremental DOM is a Google library for expressing and applying updates to DOM trees.
         Incremental DOM is not <em>targeting direct usage</em> and idomizer tries to be a pleasant solution for that.
         The project is written in TypeScript and publish on NPM.
-        The source code is available on GitHub: <a href="https://github.com/tmorin/idomizer" target="_blank">github.com/tmorin/idomizer</a>.
     </p>
 </section>
 
