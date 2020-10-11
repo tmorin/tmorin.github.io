@@ -155,11 +155,13 @@
 
     <h4 class="mt-5">PlantUML Libs</h4>
     <p>
-        <span class="badge badge-secondary">architecture</span>
+        <span class="badge badge-info">architecture</span>
         <span class="badge badge-secondary">PlantUML</span>
         <span class="badge badge-secondary">C4 Model</span>
         <span class="badge badge-secondary">EventStorming</span>
         <span class="badge badge-secondary">AWS</span>
+        <span class="badge badge-secondary">Azure</span>
+        <span class="badge badge-secondary">Gougle Cloud</span>
     </p>
     <ul class="list-inline">
         <li class="list-inline-item">
@@ -174,10 +176,13 @@
         <li>C4 Model</li>
         <li>EventStorming</li>
         <li>AWS Architecture Diagram</li>
+        <li>Azure Architecture Diagram</li>
+        <li>Google Cloud Architecture Diagram</li>
     </ul>
 
     <h4 class="mt-5">Custom Element Builder</h4>
     <p>
+        <span class="badge badge-info">front end</span>
         <span class="badge badge-secondary">library</span>
         <span class="badge badge-secondary">browser</span>
         <span class="badge badge-secondary">Custom Element</span>
@@ -203,6 +208,7 @@ https://html.spec.whatwg.org/multipage/custom-elements.html" tabindex="_blank">C
 
     <h4 class="mt-5">Abzu</h4>
     <p>
+        <span class="badge badge-info">back end</span>
         <span class="badge badge-secondary">library</span>
         <span class="badge badge-secondary">Java 11</span>
         <span class="badge badge-secondary">Gradle</span>
@@ -248,6 +254,7 @@ https://html.spec.whatwg.org/multipage/custom-elements.html" tabindex="_blank">C
 
     <h4 class="mt-5">Home Cloud</h4>
     <p>
+        <span class="badge badge-info">infrastructure</span>
         <span class="badge badge-secondary">Docker Swarm</span>
         <span class="badge badge-secondary">Ansible</span>
         <span class="badge badge-secondary">Bash</span>
@@ -256,43 +263,28 @@ https://html.spec.whatwg.org/multipage/custom-elements.html" tabindex="_blank">C
         <span class="badge badge-secondary">Traefik</span>
         <span class="badge badge-secondary">Portainer</span>
         <span class="badge badge-secondary">Influxdata</span>
+        <span class="badge badge-secondary">Nextcloud</span>
     </p>
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <i class="fab fa-github fa-fw"></i>
+            <a target="_blank" href="https://github.com/tmorin/homecloud-ansible">source on github</a>
+        </li>
+        <li class="list-inline-item">
+            <i class="fa fa-home fa-fw "></i>
+            <a target="_blank" href="https://galaxy.ansible.com/tmorin/homecloud">home page</a>
+        </li>
+    </ul>
     <p class="text-justify">
-        The goal of the project is to create a <em>home cloud</em> based on Pine64 boards (like RaspberryPie boards).
+        The primary output is an Ansible collection which can be used to create a <em>home cloud</em> based on Pine64 boards (like RaspberryPie boards).
         Initially, the <em>home cloud</em> was based on Kubernetes.
         However due to limitation of the resources, I switched to a Docker Swarm.
         The main features of the solution are: load balancing between nodes, a distributed filesystem, monitoring&alerts, reverse proxy and docker management.
     </p>
-    <p>The project is based on some repo available on GitLab:</p>
-    <ul>
-        <li>
-            <a href="https://gitlab.com/tmorin/pine64-docker-swarm" target="_blank">
-                pine64-docker-swarm
-            </a>
-            : A set of Ansible playbooks to setup a Docker Swarm cluster based on PINE A64-LTS boards.
-        </li>
-        <li>
-            <a href="https://gitlab.com/tmorin/pine64-image-armbian" target="_blank">
-                pine64-image-armbian
-            </a>
-            : Script to build an Armbian image for PINE A64-LTS boards.
-        </li>
-        <li>
-            <a href="https://gitlab.com/tmorin/pine64-docker-images" target="_blank">
-                pine64-docker-images
-            </a>
-            : A set of docker images built for pine64 board.
-        </li>
-        <li>
-            <a href="https://gitlab.com/tmorin/pine64-k8s" target="_blank">
-                pine64-k8s
-            </a>
-            pine64-k8s: The initial attempt to install Kubernetes on PINE A64-LTS boards.
-        </li>
-    </ul>
 
     <h4 class="mt-5">Clear my private data now!</h4>
     <p>
+        <span class="badge badge-info">front end</span>
         <span class="badge badge-secondary">Web Extension</span>
         <span class="badge badge-secondary">Typescript</span>
     </p>
@@ -313,6 +305,8 @@ https://html.spec.whatwg.org/multipage/custom-elements.html" tabindex="_blank">C
 
     <h4 class="mt-5">Idomizer</h4>
     <p>
+        <span class="badge badge-info">front end</span>
+        <span class="badge badge-info">back end</span>
         <span class="badge badge-secondary">library</span>
         <span class="badge badge-secondary">browser</span>
         <span class="badge badge-secondary">NodeJS</span>
