@@ -206,6 +206,7 @@
     <h4 class="mt-5">Custom Element Builder</h4>
     <p>
         <span class="badge badge-info">front end</span>
+        <span class="badge badge-info">back end</span>
         <span class="badge badge-secondary">library</span>
         <span class="badge badge-secondary">browser</span>
         <span class="badge badge-secondary">Custom Element</span>
@@ -277,20 +278,25 @@ https://html.spec.whatwg.org/multipage/custom-elements.html" tabindex="_blank">C
     <h4 class="mt-5">Home Cloud</h4>
     <p>
         <span class="badge badge-info">infrastructure</span>
-        <span class="badge badge-secondary">Docker Swarm</span>
+        <span class="badge badge-secondary">Kubernetes</span>
+        <span class="badge badge-secondary">k3s</span>
+        <span class="badge badge-secondary">Kustomize</span>
         <span class="badge badge-secondary">Ansible</span>
         <span class="badge badge-secondary">Bash</span>
         <span class="badge badge-secondary">Armbian</span>
-        <span class="badge badge-secondary">Ceph</span>
+        <span class="badge badge-secondary">Ubuntu</span>
+        <span class="badge badge-secondary">Longhorn</span>
         <span class="badge badge-secondary">Traefik</span>
-        <span class="badge badge-secondary">Portainer</span>
-        <span class="badge badge-secondary">Influxdata</span>
         <span class="badge badge-secondary">Nextcloud</span>
     </p>
     <ul class="list-inline">
         <li class="list-inline-item">
             <i class="fab fa-github fa-fw"></i>
-            <a target="_blank" href="https://github.com/tmorin/homecloud-ansible">source on github</a>
+            <a target="_blank" href="https://github.com/tmorin/homecloud-ansible">homecloud-ansible</a>
+        </li>
+        <li class="list-inline-item">
+            <i class="fab fa-github fa-fw"></i>
+            <a target="_blank" href="https://github.com/tmorin/homecloud-kustomize">homecloud-kustomize</a>
         </li>
         <li class="list-inline-item">
             <i class="fa fa-home fa-fw "></i>
@@ -298,10 +304,10 @@ https://html.spec.whatwg.org/multipage/custom-elements.html" tabindex="_blank">C
         </li>
     </ul>
     <p class="text-justify">
-        The primary output is an Ansible collection which can be used to create a <em>home cloud</em> based on Pine64 boards (like RaspberryPie boards).
-        Initially, the <em>home cloud</em> was based on Kubernetes.
-        However due to limitation of the resources, I switched to a Docker Swarm.
-        The main features of the solution are: load balancing between nodes, a distributed filesystem, monitoring&alerts, reverse proxy and docker management.
+        It is a ready-to-use set of resources to bootstrap a cloud at home mainly based on Kubernetes and Syncthing.
+        The project is breakdown in two components.
+        The first one, <code>homecloud-ansible</code>, is an Ansible collection helping to bootstrap a minimum viable Kubernetes cluster with the help of k3s as well as a “decentralized” NAS.
+        The second one, <code>homecloud-kustomize</code>, is a set of Kustomize resources providing the end-user features like Nextcloud or Calibreweb.
     </p>
 
     <h4 class="mt-5">Clear my private data now!</h4>
