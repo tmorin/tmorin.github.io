@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% set page_or_section = page | default(value=section) %}
+<html class="" lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="{{ lang }}">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="{{ page_or_section.extra.keywords }}">
+
+    <meta name="copyright" content="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+    <meta name="application-name" content="{{ config.title }}">
+
+    <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+
+    {% block append_head %}{% endblock append_head %}
+
+    <title>{% block title %}{{ config.title }} - {{ config.description }}{% endblock title %}</title>
+</head>
+<body class="screen screen-{{ page_or_section.extra.screen }} {% block bodyClass %}{% endblock bodyClass %}">
+
+{% block append_top %}{% endblock append_top %}
+
+{% block hero %}{% endblock hero %}
+
+{% block content %}{% endblock content %}
+
+{% block append_bottom %}{% endblock append_bottom %}
+
+<!-- main script -->
+<script src="https://unpkg.com/bootstrap@5/dist/js/bootstrap.min.css"></script>
+<script src="{{ get_url(path='main.js') }}?{{ now() | slugify }}"></script>
+</body>
+</html>

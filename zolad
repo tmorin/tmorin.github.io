@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+docker run \
+  -v"$(pwd):/workdir" \
+  --workdir=/workdir \
+  --user="$(id --user):$(id --group)" \
+  --publish=1111:1111 \
+  -it \
+  --rm thibaultmorin/zola:0.16 \
+  $@
