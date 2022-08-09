@@ -41,50 +41,110 @@
 {% endblock hero %}
 
 {% block content %}
-<div id="certifications" class="d-flex vh-100 text-center text-bg-light">
-    <div class="container text-center mt-auto mb-auto">
-        <h2 class="fw-bold mb-5">Certifications</h2>
-        <div class="row justify-content-center">
-            <div class="col">
-                <div data-iframe-width="150" data-iframe-height="270"
-                     data-share-badge-id="78c60816-fa66-4949-b7fd-90c27d0d1638"
-                     data-share-badge-host="https://www.credly.com"></div>
-            </div>
-            <div class="col">
-                <div data-iframe-width="150" data-iframe-height="270"
-                     data-share-badge-id="c6fbe702-bf9d-4a70-a50c-1d52b1e6c6a1"
-                     data-share-badge-host="https://www.credly.com"></div>
-            </div>
-            <div class="col">
-                <div data-iframe-width="150" data-iframe-height="270"
-                     data-share-badge-id="fde46ce6-1af5-453e-8150-478362470ab3"
-                     data-share-badge-host="https://www.credly.com"></div>
-            </div>
-            <div class="col">
-                <div data-iframe-width="150" data-iframe-height="270"
-                     data-share-badge-id="5bdad9b7-84bf-4eba-b173-65d34e52b24d"
-                     data-share-badge-host="https://www.credly.com"></div>
-            </div>
-            <div class="col">
-                <div data-iframe-width="150" data-iframe-height="270"
-                     data-share-badge-id="16b079cb-6481-48c1-a925-0f89f4feb445"
-                     data-share-badge-host="https://www.credly.com"></div>
-            </div>
-            <div class="col">
-                <div data-iframe-width="150" data-iframe-height="270"
-                     data-share-badge-id="a36b9c1b-696d-4031-8f34-425555f9aa19"
-                     data-share-badge-host="https://www.credly.com"></div>
-            </div>
-            <div class="col">
-                <div data-iframe-width="150" data-iframe-height="270"
-                     data-share-badge-id="7ef29408-251e-4737-9d1b-dc3aaec814e4"
-                     data-share-badge-host="https://www.credly.com"></div>
+<div id="certifications" class="d-flex flex-column min-vh-100 text-center text-bg-light p-3">
+    <div class="mt-auto mb-auto">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Certifications</h2>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <div data-iframe-width="150" data-iframe-height="270"
+                         data-share-badge-id="78c60816-fa66-4949-b7fd-90c27d0d1638"
+                         data-share-badge-host="https://www.credly.com"></div>
+                </div>
+                <div class="col">
+                    <div data-iframe-width="150" data-iframe-height="270"
+                         data-share-badge-id="c6fbe702-bf9d-4a70-a50c-1d52b1e6c6a1"
+                         data-share-badge-host="https://www.credly.com"></div>
+                </div>
+                <div class="col">
+                    <div data-iframe-width="150" data-iframe-height="270"
+                         data-share-badge-id="fde46ce6-1af5-453e-8150-478362470ab3"
+                         data-share-badge-host="https://www.credly.com"></div>
+                </div>
+                <div class="col">
+                    <div data-iframe-width="150" data-iframe-height="270"
+                         data-share-badge-id="5bdad9b7-84bf-4eba-b173-65d34e52b24d"
+                         data-share-badge-host="https://www.credly.com"></div>
+                </div>
+                <div class="col">
+                    <div data-iframe-width="150" data-iframe-height="270"
+                         data-share-badge-id="16b079cb-6481-48c1-a925-0f89f4feb445"
+                         data-share-badge-host="https://www.credly.com"></div>
+                </div>
+                <div class="col">
+                    <div data-iframe-width="150" data-iframe-height="270"
+                         data-share-badge-id="a36b9c1b-696d-4031-8f34-425555f9aa19"
+                         data-share-badge-host="https://www.credly.com"></div>
+                </div>
+                <div class="col">
+                    <div data-iframe-width="150" data-iframe-height="270"
+                         data-share-badge-id="7ef29408-251e-4737-9d1b-dc3aaec814e4"
+                         data-share-badge-host="https://www.credly.com"></div>
+                </div>
             </div>
         </div>
-
-
-        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-
+    </div>
+    <div class="mt-auto d-grid">
+        <a class="btn btn-light" role="button" href="#opensource">
+            <i class="fa-solid fa-arrow-down fa-fade"></i>
+        </a>
     </div>
 </div>
+<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+<div id="opensource" class="d-flex flex-column min-vh-100 text-center text-bg-light p-3">
+    <div class="mt-auto mb-auto">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Open-Source</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+                <div class="col" data-github-repository="tmorin/plantuml-libs"></div>
+                <div class="col" data-github-repository="tmorin/plantuml-generator"></div>
+                <div class="col" data-github-repository="tmorin/homecloud-ansible"></div>
+                <div class="col" data-github-repository="tmorin/homecloud-kustomize"></div>
+                <div class="col" data-github-repository="tmorin/ceb"></div>
+                <div class="col" data-github-repository="tmorin/faggregate"></div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-auto d-grid">
+        <a class="btn btn-light mt-3" role="button" href="#identity">
+            <i class="fa-solid fa-arrow-up fa-fade"></i>
+        </a>
+    </div>
+</div>
+<script>
+    function feedOpenSourceProjectCard(cardContainer) {
+        console.log("cardContainer", cardContainer);
+        console.log("cardContainer", cardContainer.dataset.githubRepository);
+        cardContainer.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i>`;
+        fetch(`https://api.github.com/repos/${cardContainer.dataset.githubRepository}`)
+            .then(response => response.json())
+            .then(response => {
+                console.log(response);
+                cardContainer.innerHTML = `
+<div class="card h-100 position-relative">
+    <div class="card-body">
+        <h5 class="card-title">${response.name}</h5>
+        <p class="card-text">${response.description.replaceAll("<", "&lt;").replaceAll(">", "&gt;")}</p>
+    </div>
+    <div class="card-footer">
+        <a href="${response.html_url}" class="btn btn-primary" target="_blank">
+            Checkout the source code
+        </a>
+    </div>
+    <span class="position-absolute top-0 start-100 translate-middle" style="z-index: 1000">
+        <span class="badge rounded-pill bg-secondary">
+            <i class="fa-solid fa-star"></i> ${response.stargazers_count}
+            <i class="fa-solid fa-code-fork"></i> ${response.forks_count}
+        </span>
+    </span>
+</div>
+`;
+            })
+    }
+
+    Array.from(document.querySelectorAll("#opensource [data-github-repository]")).forEach((cardContainer) => {
+        feedOpenSourceProjectCard(cardContainer)
+    })
+</script>
 {% endblock content %}
