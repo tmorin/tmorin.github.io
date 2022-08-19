@@ -2,6 +2,12 @@
 {% set page_or_section = page | default(value=section) %}
 <html class="" lang="{{ lang }}">
 <head>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JCL8W239YR');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -33,5 +39,8 @@
 <!-- main script -->
 <script src="https://unpkg.com/bootstrap@5/dist/js/bootstrap.min.css"></script>
 <script src="{{ get_url(path='main.js') }}?{{ now() | slugify }}"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JCL8W239YR"></script>
 </body>
 </html>
