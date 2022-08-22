@@ -1,47 +1,60 @@
 {% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block append_head %}
+{% set data = load_data(path="content/data.toml") %}
+{{ macros::skills_as_style(skills=data.skills) }}
+{% endblock append_head %}
 
 {% block hero %}
-<div id="identity" class="d-flex vh-100 text-center text-bg-dark">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <div class="row align-items-center justify-content-center mt-auto">
-            <div class="col-sm-12 text-center col-md-6 text-md-end">
-                <img class="d-inline d-sm-none img-fluid rounded-circle" width="200" alt="Thibault Morin"
-                     src="{{get_url(path='thibault_morin.jpeg')}}">
-                <img class="d-none d-sm-inline img-fluid rounded-circle" width="300" alt="Thibault Morin"
-                     src="{{get_url(path='thibault_morin.jpeg')}}">
+<article id="identity" class="d-flex flex-column min-vh-100 text-center p-3 text-bg-dark">
+    <div class="mt-auto mb-auto">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <div class="row align-items-center justify-content-center mt-auto">
+                <div class="col-sm-12 text-center col-md-6 text-md-end">
+                    <img class="d-inline d-sm-none img-fluid rounded-circle" width="200" alt="Thibault Morin"
+                         src="{{get_url(path='thibault_morin.jpeg')}}">
+                    <img class="d-none d-sm-inline img-fluid rounded-circle" width="300" alt="Thibault Morin"
+                         src="{{get_url(path='thibault_morin.jpeg')}}">
+                </div>
+                <div class="col-sm-12 text-center col-md-6 text-md-start">
+                    <h1 class="fw-bold">{{ section.title }}</h1>
+                    <p class="lead mb-4">{{ section.description }}</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="{{ section.extra.links.linkedin }}" target="_blank"
+                               class="btn btn-dark">
+                                <i class="fa-fw fa-brands fa-linkedin fa-2x"></i><br>
+                                linkedIn
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="{{ section.extra.links.github }}" target="_blank"
+                               class="btn btn-dark">
+                                <i class="fa-fw fa-brands fa-github fa-2x"></i><br>
+                                <span>GitHub</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-sm-12 text-center col-md-6 text-md-start">
-                <h1 class="fw-bold">{{ section.title }}</h1>
-                <p class="lead mb-4">{{ section.description }}</p>
-                <ul class="list-inline">
-                    <li class="list-inline-item">
-                        <a href="{{ section.extra.links.linkedin }}" target="_blank"
-                           class="btn btn-dark">
-                            <i class="fa-fw fa-brands fa-linkedin fa-2x"></i><br>
-                            linkedIn
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="{{ section.extra.links.github }}" target="_blank"
-                           class="btn btn-dark">
-                            <i class="fa-fw fa-brands fa-github fa-2x"></i><br>
-                            <span>GitHub</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="mt-auto d-grid">
-            <a class="btn btn-dark" role="button" href="#certifications">
-                <i class="fa-solid fa-arrow-down fa-fade"></i>
-            </a>
         </div>
     </div>
-</div>
+    <div class="d-grid pt-3">
+        <a class="btn btn-dark" role="button" href="#architecture">
+            <i class="fa-solid fa-arrow-down fa-fade"></i>
+        </a>
+    </div>
+</article>
 {% endblock hero %}
 
+
 {% block content %}
-<div id="certifications" class="d-flex flex-column min-vh-100 text-center text-bg-light p-3">
+
+{% set data = load_data(path="content/data.toml") %}
+{{ macros::skills_as_html(skills=data.skills, last_next_id="certifications") }}
+
+<article id="certifications" class="d-flex flex-column min-vh-100 text-center text-bg-light p-3">
     <div class="mt-auto mb-auto">
         <div class="container text-center">
             <h2 class="fw-bold mb-5">Certifications</h2>
@@ -89,10 +102,10 @@
             <i class="fa-solid fa-arrow-down fa-fade"></i>
         </a>
     </div>
-</div>
+</article>
 <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
-<div id="opensource" class="d-flex flex-column min-vh-100 text-center text-bg-light p-3">
+<article id="opensource" class="d-flex flex-column min-vh-100 text-center text-bg-light p-3">
     <div class="mt-auto mb-auto">
         <div class="container text-center">
             <h2 class="fw-bold mb-5">Open-Source</h2>
@@ -111,7 +124,7 @@
             <i class="fa-solid fa-arrow-up fa-fade"></i>
         </a>
     </div>
-</div>
+</article>
 <script>
     function feedOpenSourceProjectCard(cardContainer) {
         console.log("cardContainer", cardContainer);

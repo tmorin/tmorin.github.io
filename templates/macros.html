@@ -1,0 +1,112 @@
+{% macro skills_as_html(skills, last_next_id) %}
+{% for skill in skills %}
+{% set next_index = loop.index %}
+{% set next_id = skills[next_index].id | default(value=last_next_id) %}
+<article id="{{ skill.id }}" class="d-flex flex-column min-vh-100 text-center p-3">
+    <div class="container flex-grow-1 d-flex align-stretch-center justify-content-center">
+        <div class="row">
+            <div class="col-sm-8 col-md-6 d-flex flex-column align-stretch-center justify-content-center">
+                <div class="text-bg-light p-3 rounded">
+                    <h2 class="fw-bold mb-3">{{ skill.title }}</h2>
+                    <p class="lead m-0 p-0">{{ skill.content | markdown(inline=true) | safe }}</p>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-6 d-flex flex-column align-items-center justify-content-center"></div>
+        </div>
+    </div>
+    <div class="d-grid pt-3">
+        <a class="btn link-light" role="button" href="#{{ next_id }}">
+            <i class="fa-solid fa-arrow-down fa-fade"></i>
+        </a>
+    </div>
+</article>
+{% endfor %}
+{% endmacro skill %}
+
+{% macro skills_as_style(skills) %}
+<style>
+    @media (max-width: 576px) {
+    {% for skill in skills %}
+    {% set image = resize_image(path=skill.id~".jpg", width=600, op="fit_width") %}
+        #{{ skill.id }} {
+            background-attachment: scroll;
+            background-size: cover;
+            background-position: center;
+            background-origin: content-box;
+            background-repeat: no-repeat;
+            background-image: url("{{ image.url | safe }}")
+        }
+    {% endfor %}
+    }
+
+    @media (max-width: 768px) {
+    {% for skill in skills %}
+    {% set image = resize_image(path=skill.id~".jpg", width=800, op="fit_width") %}
+        #{{ skill.id }} {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-image: url("{{ image.url | safe }}")
+        }
+    {% endfor %}
+    }
+
+    @media (max-width: 992px) {
+    {% for skill in skills %}
+    {% set image = resize_image(path=skill.id~".jpg", width=1000, op="fit_width") %}
+        #{{ skill.id }} {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-image: url("{{ image.url | safe }}")
+        }
+    {% endfor %}
+    }
+
+    @media (max-width: 1200px) {
+    {% for skill in skills %}
+    {% set image = resize_image(path=skill.id~".jpg", width=1200, op="fit_width") %}
+        #{{ skill.id }} {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-image: url("{{ image.url | safe }}")
+    }
+    {% endfor %}
+    }
+
+    @media (max-width: 2000px) {
+    {% for skill in skills %}
+    {% set image = resize_image(path=skill.id~".jpg", width=2000, op="fit_width") %}
+        #{{ skill.id }} {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-image: url("{{ image.url | safe }}")
+        }
+    {% endfor %}
+    }
+
+    @media (min-width: 2001px) {
+    {% for skill in skills %}
+    {% set image = resize_image(path=skill.id~".jpg", width=4000, op="fit_width") %}
+        #{{ skill.id }} {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-image: url("{{ image.url | safe }}")
+        }
+    {% endfor %}
+    }
+</style>
+{% endmacro skill %}
