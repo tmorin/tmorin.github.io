@@ -12,9 +12,7 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v3.0.0
-      - run: git config --global --add safe.directory /github/workspace
       - name: Build and deploy
-        uses: shalzz/zola-deploy-action@v0.16.0
+        uses: shalzz/zola-deploy-action@v0.17.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BUILD_ONLY: false
