@@ -118,12 +118,39 @@
         </div>
     </div>
     <div class="mt-auto d-grid">
-        <a class="btn btn-light" role="button" href="#opensource">
+        <a class="btn btn-light" role="button" href="#articles">
             <i class="fa-solid fa-arrow-down fa-fade"></i>
         </a>
     </div>
 </article>
 <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+<article id="articles" class="d-flex flex-column min-vh-100 text-center text-bg-light p-3">
+    <div class="mt-auto mb-auto">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Articles</h2>
+            <div class="row">
+                    <div>
+                        <a class="fw-bold" target="_blank" href="https://tmorin.github.io/article-codebase-metamodel/">
+                            Enterprise Application: a metamodel to streamline codebase organization
+                        </a>
+                        <p>The article discusses a metamodel for organizing enterprise codebases, focusing on software and business alignment. </p>
+                    </div>
+                    <div>
+                        <a class="fw-bold" target="_blank" href="https://tmorin.github.io/article-practical-introduction/">
+                            ArchiMate: a practical introduction
+                        </a>
+                        <p>The article discusses the practical applications of ArchiMate through a fictive scenario.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-auto d-grid">
+        <a class="btn btn-light" role="button" href="#opensource">
+            <i class="fa-solid fa-arrow-down fa-fade"></i>
+        </a>
+    </div>
+</article>
 
 <article id="opensource" class="d-flex flex-column min-vh-100 text-center text-bg-light p-3">
     <div class="mt-auto mb-auto">
@@ -132,6 +159,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
                 <div class="col" data-github-repository="tmorin/plantuml-libs"></div>
                 <div class="col" data-github-repository="tmorin/archicode"></div>
+                <div class="col" data-github-repository="tmorin/faggregate"></div>
             </div>
         </div>
     </div>
@@ -171,7 +199,6 @@
 `;
             })
     }
-
     Array.from(document.querySelectorAll("#opensource [data-github-repository]")).forEach((cardContainer) => {
         feedOpenSourceProjectCard(cardContainer)
     })
