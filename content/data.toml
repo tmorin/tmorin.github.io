@@ -3,7 +3,7 @@
 id = "architecture"
 title = "Architecture"
 content = """
-Certified in [TOGAF® 9 Certified](https://www.credly.com/badges/c6fbe702-bf9d-4a70-a50c-1d52b1e6c6a1/public_url),
+Certified in [TOGAF® Enterprise Architecture Practitioner](https://www.credly.com/badges/c3a4a79c-5516-4717-af5f-d42ba2fbf325/public_url),
 [ArchiMate® 3 Practitioner](https://www.credly.com/badges/fca71178-57a0-4cdb-92f4-35f1034895cc/public_url) and
 as an [AWS Certified Solutions Architect - Associate](https://www.credly.com/badges/78c60816-fa66-4949-b7fd-90c27d0d1638/public_url),
 I assist both the team and the organization in pinpointing, strategizing, and executing solutions that elevate business results.
@@ -24,7 +24,7 @@ id = "devops"
 title = "Devops"
 content = """
 As a [Certified Kubernetes Application Developer](https://www.credly.com/badges/5bdad9b7-84bf-4eba-b173-65d34e52b24d/public_url),
-I specialize in constructing robust delivery pipelines and ensuring transparent deployment environments.
+I'm specializes in constructing robust delivery pipelines and ensuring transparent deployment environments.
 My expertise aids the team in reducing operational hazards.
 """
 
