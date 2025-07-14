@@ -74,81 +74,13 @@
     <div class="mt-5 mb-5">
         <div class="container text-center">
             <h2 class="fw-bold mb-5">Certifications</h2>
-            <div class="row justify-content-center">
-                <div class="col">
-                    <!-- enterprise architect -->
-                    <div data-iframe-width="150" data-iframe-height="270"
-                         data-share-badge-id="c3a4a79c-5516-4717-af5f-d42ba2fbf325"
-                         data-share-badge-host="https://www.credly.com"></div>
-                </div>
-                <div class="col">
-                    <!-- Business Architecture Foundation -->
-                    <div data-iframe-width="150" data-iframe-height="270"
-                         data-share-badge-id="f7c5e689-7730-4e8b-a1f1-201b85088a96"
-                         data-share-badge-host="https://www.credly.com"></div>
-                </div>
-                <div class="col">
-                    <!-- IT4IT™ 3 Foundation -->
-                    <div data-iframe-width="150" data-iframe-height="270"
-                         data-share-badge-id="03fd593c-4690-4fea-87cd-f79e75171db5"
-                         data-share-badge-host="https://www.credly.com"></div>
-                </div>
-                <div class="col">
-                    <!-- archimate 2 -->
-                    <div data-iframe-width="150" data-iframe-height="270"
-                         data-share-badge-id="fca71178-57a0-4cdb-92f4-35f1034895cc"
-                         data-share-badge-host="https://www.credly.com"></div>
-                </div>
-                <div class="col">
-                    <!-- archimate 1 -->
-                    <div data-iframe-width="150" data-iframe-height="270"
-                         data-share-badge-id="0267e07d-514d-43f0-8d59-24cff2200d56"
-                         data-share-badge-host="https://www.credly.com"></div>
-                </div>
-                <div class="col">
-                    <!-- togaf9 2 -->
-                    <div data-iframe-width="150" data-iframe-height="270"
-                         data-share-badge-id="c6fbe702-bf9d-4a70-a50c-1d52b1e6c6a1"
-                         data-share-badge-host="https://www.credly.com"></div>
-                </div>
-                <div class="col">
-                    <!-- togaf9 1 -->
-                    <div data-iframe-width="150" data-iframe-height="270"
-                         data-share-badge-id="fde46ce6-1af5-453e-8150-478362470ab3"
-                         data-share-badge-host="https://www.credly.com"></div>
-                </div>
-                <div class="col">
-                    <!-- aws -->
-                    <div data-iframe-width="150" data-iframe-height="270"
-                         data-share-badge-id="78c60816-fa66-4949-b7fd-90c27d0d1638"
-                         data-share-badge-host="https://www.credly.com"></div>
-                </div>
-                <div class="col">
-                    <!-- kubernetes -->
-                    <div data-iframe-width="150" data-iframe-height="270"
-                         data-share-badge-id="5bdad9b7-84bf-4eba-b173-65d34e52b24d"
-                         data-share-badge-host="https://www.credly.com"></div>
-                </div>
-                <div class="col">
-                    <div data-iframe-width="150" data-iframe-height="270"
-                         data-share-badge-id="16b079cb-6481-48c1-a925-0f89f4feb445"
-                         data-share-badge-host="https://www.credly.com"></div>
-                </div>
-                <div class="col">
-                    <div data-iframe-width="150" data-iframe-height="270"
-                         data-share-badge-id="a36b9c1b-696d-4031-8f34-425555f9aa19"
-                         data-share-badge-host="https://www.credly.com"></div>
-                </div>
-                <div class="col">
-                    <div data-iframe-width="150" data-iframe-height="270"
-                         data-share-badge-id="7ef29408-251e-4737-9d1b-dc3aaec814e4"
-                         data-share-badge-host="https://www.credly.com"></div>
-                </div>
+            <div class="row g-2 justify-content-center">
+                {% set data = load_data(path="content/data.toml") %}
+                {{ macros::certifications_as_html(certifications=data.certifications) }}
             </div>
         </div>
     </div>
 </article>
-<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 <article id="articles" class="d-flex flex-column p-3 pt-5 pb-5 text-center text-bg-light p-3">
     <div class="mt-5 mb-5">

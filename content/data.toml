@@ -36,3 +36,94 @@ Boasting over 15 years in software development and profound expertise in Java an
 whether on bare-metal servers or cloud platforms, I guide the team in crafting robust, secure,
 and scalable containerized solutions, alongside versatile, comprehensible, and testable web applications.
 """
+
+[[certifications]]
+title = "ITIL® 4 Foundation Certificate in IT Service Management"
+imageName = "ec721fda-bb43-434e-8ef8-e99f8c748ee4.png"
+issuer = "PeopleCert"
+registerName = "PeopleCert"
+registerUrl = "https://www.peoplecert.org/public-profile?ed=XCHu3ZqUTNJkB%2bOpbp0UHRqCqUzzY5Xv"
+
+[[certifications]]
+title = "The Open Group Certified: TOGAF® Enterprise Architecture Practitioner"
+imageName = "c3a4a79c-5516-4717-af5f-d42ba2fbf325.png"
+issuer = "The Open Group"
+registerName = "Credly"
+registerUrl = "https://www.credly.com/badges/c3a4a79c-5516-4717-af5f-d42ba2fbf325/embedded"
+
+[[certifications]]
+title = "The Open Group Certified: TOGAF® Business Architecture Foundation"
+imageName = "f7c5e689-7730-4e8b-a1f1-201b85088a96.png"
+issuer = "The Open Group"
+registerName = "Credly"
+registerUrl = "https://www.credly.com/badges/f7c5e689-7730-4e8b-a1f1-201b85088a96/embedded"
+
+[[certifications]]
+title = "The Open Group Certified: IT4IT™ 3 Foundation"
+imageName = "03fd593c-4690-4fea-87cd-f79e75171db5.png"
+issuer = "The Open Group"
+registerName = "Credly"
+registerUrl = "https://www.credly.com/badges/03fd593c-4690-4fea-87cd-f79e75171db5/embedded"
+
+[[certifications]]
+title = "The Open Group Certified: ArchiMate® 3 Practitioner"
+imageName = "fca71178-57a0-4cdb-92f4-35f1034895cc.png"
+issuer = "The Open Group"
+registerName = "Credly"
+registerUrl = "https://www.credly.com/badges/fca71178-57a0-4cdb-92f4-35f1034895cc/embedded"
+
+[[certifications]]
+title = "The Open Group Certified: ArchiMate® 3 Foundation"
+imageName = "0267e07d-514d-43f0-8d59-24cff2200d56.png"
+issuer = "The Open Group"
+registerName = "Credly"
+registerUrl = "https://www.credly.com/badges/0267e07d-514d-43f0-8d59-24cff2200d56/embedded"
+
+[[certifications]]
+title = "The Open Group Certified: TOGAF® 9 Certified"
+imageName = "c6fbe702-bf9d-4a70-a50c-1d52b1e6c6a1.png"
+issuer = "The Open Group"
+registerName = "Credly"
+registerUrl = "https://www.credly.com/badges/c6fbe702-bf9d-4a70-a50c-1d52b1e6c6a1/embedded"
+
+[[certifications]]
+title = "The Open Group Certified: TOGAF® 9 Foundation"
+imageName = "fde46ce6-1af5-453e-8150-478362470ab3.png"
+issuer = "The Open Group"
+registerName = "Credly"
+registerUrl = "https://www.credly.com/badges/fde46ce6-1af5-453e-8150-478362470ab3/embedded"
+
+[[certifications]]
+title = "AWS Certified Solutions Architect – Associate"
+imageName = "78c60816-fa66-4949-b7fd-90c27d0d1638.png"
+issuer = "The Open Group"
+registerName = "Credly"
+registerUrl = "https://www.credly.com/badges/78c60816-fa66-4949-b7fd-90c27d0d1638/embedded"
+
+[[certifications]]
+title = "CKAD: Certified Kubernetes Application Developer"
+imageName = "5bdad9b7-84bf-4eba-b173-65d34e52b24d.png"
+issuer = "The Open Group"
+registerName = "Credly"
+registerUrl = "https://www.credly.com/badges/5bdad9b7-84bf-4eba-b173-65d34e52b24d/embedded"
+
+[[certifications]]
+title = "Professional Scrum Product Owner™ I (PSPO I)"
+imageName = "7ef29408-251e-4737-9d1b-dc3aaec814e4.png"
+issuer = "Scrum.org"
+registerName = "Credly"
+registerUrl = "https://www.credly.com/badges/7ef29408-251e-4737-9d1b-dc3aaec814e4/embedded"
+
+[[certifications]]
+title = "Professional Scrum Master™ I (PSM I)"
+imageName = "a36b9c1b-696d-4031-8f34-425555f9aa19.png"
+issuer = "Scrum.org"
+registerName = "Credly"
+registerUrl = "https://www.credly.com/badges/a36b9c1b-696d-4031-8f34-425555f9aa19/embedded"
+
+[[certifications]]
+title = "Professional Scrum Developer™ I (PSD I)"
+imageName = "16b079cb-6481-48c1-a925-0f89f4feb445.png"
+issuer = "Scrum.org"
+registerName = "Credly"
+registerUrl = "https://www.credly.com/badges/16b079cb-6481-48c1-a925-0f89f4feb445/embedded"
