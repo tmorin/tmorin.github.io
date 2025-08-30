@@ -8,6 +8,7 @@ keywords = "enterprise,solution,architect,resume,digital,transformation"
 github="https://github.com/tmorin"
 linkedin="https://www.linkedin.com/in/thibaultmorin"
 credly="https://www.credly.com/users/thibault-morin"
+udemy="https://www.udemy.com/user/thibault-191/"
 +++
 
 ## Architecture
