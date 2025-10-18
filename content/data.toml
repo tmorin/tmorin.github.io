@@ -38,6 +38,13 @@ and scalable containerized solutions, alongside versatile, comprehensible, and t
 """
 
 [[certifications]]
+title = "ITIL® 4 Specialist Create, Deliver and Support Certificate"
+imageName = "0ea3f1ef-4346-4ffe-8297-ac4b774cd9d9.png"
+issuer = "PeopleCert"
+registerName = "PeopleCert"
+registerUrl = "https://www.peoplecert.org/public-profile?ed=XCHu3ZqUTNJkB%2bOpbp0UHRqCqUzzY5Xv"
+
+[[certifications]]
 title = "ITIL® 4 Foundation Certificate in IT Service Management"
 imageName = "ec721fda-bb43-434e-8ef8-e99f8c748ee4.png"
 issuer = "PeopleCert"
