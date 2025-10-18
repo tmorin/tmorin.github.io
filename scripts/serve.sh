@@ -11,4 +11,5 @@ popd  > /dev/null
 
 $SCRIPT_PATH/../zolad serve \
   --interface 0.0.0.0 \
-  --base-url 0.0.0.0
+  --base-url localhost \
+  --port 1111
