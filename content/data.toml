@@ -103,14 +103,14 @@ registerUrl = "https://www.credly.com/badges/fde46ce6-1af5-453e-8150-478362470ab
 [[certifications]]
 title = "AWS Certified Solutions Architect – Associate"
 imageName = "78c60816-fa66-4949-b7fd-90c27d0d1638.png"
-issuer = "The Open Group"
+issuer = "Amazon Web Services Training and Certification"
 registerName = "Credly"
 registerUrl = "https://www.credly.com/badges/78c60816-fa66-4949-b7fd-90c27d0d1638/embedded"
 
 [[certifications]]
 title = "CKAD: Certified Kubernetes Application Developer"
 imageName = "5bdad9b7-84bf-4eba-b173-65d34e52b24d.png"
-issuer = "The Open Group"
+issuer = "The Linux Foundation"
 registerName = "Credly"
 registerUrl = "https://www.credly.com/badges/5bdad9b7-84bf-4eba-b173-65d34e52b24d/embedded"
 
